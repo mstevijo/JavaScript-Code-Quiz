@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    
+    <title>Coding Quiz</title>
+    
+</head>
+<body>
+    <div class = "container">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Ready to Play?</h1>
+        <p class="lead">We are going to ask you a seriers of questions. Get it right add more time! Get it wrong lose time.</p>
+        <hr class="my-4">
+        <p>When you press START, we will ask the first question and the timer will start ticking! Ready?</p>
+        <button class="btn btn-primary btn-lg button">START</button>
+        <h3 class= "timer">Timer</h3> 
+        <h3 class = "score-keeper">Score :<div id="results"></div></h3>
+      </div>
+    </div>
+
+      <div class = "container text-center" id="questionbox">
+      <div class = "row justify-contect-center col-md-6 offset-md-3"> 
+      <div class="card" style="width: 50rem;">
+        <div class="card-header quiz">
+          Question
+        </div>
+		 <div class="question">
+        <ul id="quiz">
+        <!--   <li class="answer1">Answer1</li>
+          <li class="answer2">Answer2</li>
+          <li class="answer3">Answer3</li>
+          <li class="answer4">Answer4</li> -->
+		  
+        </ul>
+		<div id="choices">
+               	<div class="choice" id="option1" onclick="checkAnswer('a')"></div>
+                <div class="choice" id="option2" onclick="checkAnswer('b')"></div>
+                <div class="choice" id="option3" onclick="checkAnswer('c')"></div>
+            </div>
+	</div>
+      </div>
+	  	<button id="submit">Get Results</button>
+
+    </div> 
+    </div>
+
+    <div id="results"></div>
+
+    
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
